@@ -12,7 +12,7 @@ export default function HomeScreen(props){
     }
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Welcome to Rick and Morty's API for Android</Text>
+            <Text style={styles.title}>Welcome to South Park's API for Android</Text>
             <Text style={styles.text}>Character List</Text>
             <Button color="#FE434C" onPress={goToChar} title='Characters'/>
             <Text style={styles.text}>Settings page</Text> 

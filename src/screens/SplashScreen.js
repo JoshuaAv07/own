@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { StyleSheet, Image, SafeAreaView } from "react-native";
 
 const image_url = 
-    "https://es.web.img3.acsta.net/pictures/18/10/31/17/34/2348073.jpg";
+    "https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg";
 
 export default function SplashScreen({ navigation }){
     useEffect(() => {
