@@ -1,8 +1,8 @@
 # React Native APP consuming an API (South Park API)
 
-<h2>APPS Design</h2>
-<h2>TIDBIS41M</h2>
-<h2>21/03/2022</h2>
+<h4>APPS Design</h4>
+<h4>TIDBIS41M</h4>
+<h4>21/03/2022</h4>
 
 <div>
   <img src="https://github.com/JoshuaAv07/own/blob/master/assets/ss/Screenshot_2022-03-21-18-49-54.png?raw=true" 
