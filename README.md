@@ -23,5 +23,5 @@
        alt="Character" width="400" height="700"/>
   
   <img src="" 
-       alt="Evaluation Rubric" width="400" height="700"/>
+       alt="Evaluation Rubric" width="" height=""/>
 </div>
