@@ -6,34 +6,37 @@ export default function CharacterDetails(props){
     return(
         <View style={styles.container}>
             <View style={styles.content}>
-                <Image style={styles.image} source={{uri: character.image}}/>
+                <Text style={styles.title}>{character.name}</Text>
+                
                 <View style={styles.property}>
-                    <Text style={styles.property_name}>Name: </Text>
-                    <Text style={styles.property_value}>{character.name}</Text>
+                    <Text style={styles.property_name}>Age: </Text>
+                    <Text style={styles.property_value}>{[
+                        character.age === null
+                            ? `N/A`
+                            : `${character.age}`
+                        ]}
+                    </Text>
                 </View>
                 <View style={styles.property}>
-                    <Text style={styles.property_name}>Status: </Text>
-                    <Text style={styles.property_value}>{character.status}</Text>
+                    <Text style={styles.property_name}>Religion: </Text>
+                    <Text style={styles.property_value}>{character.religion}</Text>
                 </View>
                 <View style={styles.property}>
-                    <Text style={styles.property_name}>Species: </Text>
-                    <Text style={styles.property_value}>{character.species}</Text>
+                    <Text style={styles.property_name}>Sex: </Text>
+                    <Text style={styles.property_value}>{character.sex}</Text>
                 </View>
                 <View style={styles.property}>
-                    <Text style={styles.property_name}>Type: </Text>
-                    <Text style={styles.property_value}>{character.type || "NA"}</Text>
+                    <Text style={styles.property_name}>Hair: </Text>
+                    <Text style={styles.property_value}>{character.hair_color}</Text>
                 </View>
                 <View style={styles.property}>
-                    <Text style={styles.property_name}>Gender: </Text>
-                    <Text style={styles.property_value}>{character.gender}</Text>
-                </View>
-                <View style={styles.property}>
-                    <Text style={styles.property_name}>Origin: </Text>
-                    <Text style={styles.property_value}>{character.origin.name}</Text>
-                </View>
-                <View style={styles.property}>
-                    <Text style={styles.property_name}>Location: </Text>
-                    <Text style={styles.property_value}>{character.location.name}</Text>
+                    <Text style={styles.property_name}>Grade: </Text>
+                    <Text style={styles.property_value}>{[
+                        character.grade === null
+                            ? `N/A`
+                            : `${character.grade}`
+                        ]}  
+                    </Text>
                 </View>
             </View>
         </View>
@@ -44,7 +47,7 @@ const styles = StyleSheet.create({
     container:{
         width: "100%",
         height: "100%",
-        backgroundColor: "#24282f",
+        backgroundColor: "#DAF7A6",
     },
     content:{
         flex:1,
@@ -60,20 +63,16 @@ const styles = StyleSheet.create({
         shadowOpacity:0.25,
         shadowRadius: 3.84,
         elevation: 5,
-        backgroundColor: "#3c3e44",
+        backgroundColor: "#6E2C00",
         marginBottom:20,
     },
-    image:{
-        margin:10,
-        marginTop:20,
-        marginBottom:20,
-        position:"relative",
-        alignSelf:"center",
-        width: 200,
-        height: 200,
-        borderRadius: 100,
-        borderColor: "gray",
-        borderWidth:3,
+    title:{
+        fontSize: 30,
+        alignSelf: "flex-start",
+        alignContent: "center",
+        color:"white",
+        margin: 40,
+        marginLeft: 50,
     },
     property:{
         flex:1,
@@ -82,18 +81,17 @@ const styles = StyleSheet.create({
         alignItems:"center",
         margin:0,
         padding:0,
-        marginBottom:5,
     },
     property_name:{
-        fontSize: 14,
+        fontSize: 25,
         alignSelf: "flex-start",
-        color:"#8a8b8c",
+        color:"#FFC300",
         marginLeft:40,
     },
     property_value:{
         height:"100%",
         color:"#ECECEC",
-        fontSize:14,
+        fontSize:20,
         alignSelf:"flex-start",
         marginLeft:60,
     },

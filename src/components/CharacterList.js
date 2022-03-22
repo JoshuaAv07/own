@@ -18,6 +18,6 @@ export default function CharacterList({ characters, navigation }) {
 const styles = StyleSheet.create({
     flatListContentContainer:{
         paddingHorizontal: 5,
-        backgroundColor:"#24282f"
+        backgroundColor:"#DAF7A6"
     }
 })

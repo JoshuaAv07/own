@@ -7,9 +7,9 @@ export default function SettingsScreen(props) {
     <View style={styles.container}>
         <Text style={styles.title}>Settings</Text>
         <Text style={styles.text}>Return Home</Text>
-        <Button onPress={()=> { navigation.navigate("Home") }} title='Go to Home' color="#FE434C"/>
+        <Button onPress={()=> { navigation.navigate("Home") }} title='Go to Home' color="#2ECC71"/>
         <Text style={styles.text}>Character List</Text>
-        <Button onPress={()=> { navigation.navigate("Character") }} title='Characters' color="#FE434C"/>
+        <Button onPress={()=> { navigation.navigate("Character") }} title='Characters' color="#2ECC71"/>
 
         
     </View>
@@ -19,7 +19,7 @@ export default function SettingsScreen(props) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#24282f',
+        backgroundColor: '#6E2C00',
         alignItems: 'center',
         justifyContent: 'center',
     },

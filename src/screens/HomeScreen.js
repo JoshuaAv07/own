@@ -14,9 +14,9 @@ export default function HomeScreen(props){
         <View style={styles.container}>
             <Text style={styles.title}>Welcome to South Park's API for Android</Text>
             <Text style={styles.text}>Character List</Text>
-            <Button color="#FE434C" onPress={goToChar} title='Characters'/>
+            <Button color="#2ECC71" onPress={goToChar} title='Characters'/>
             <Text style={styles.text}>Settings page</Text> 
-            <Button color="#FE434C" onPress={goToPage} title='Go to Settings'/>
+            <Button color="#2ECC71" onPress={goToPage} title='Go to Settings'/>
         </View>
     )
 }
@@ -24,7 +24,7 @@ export default function HomeScreen(props){
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#24282f',
+      backgroundColor: '#6E2C00',
       alignItems: 'center',
       justifyContent: 'center',
     },

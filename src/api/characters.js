@@ -1,10 +1,10 @@
-const URL = "https://rickandmortyapi.com/api/character/"
+const URL = "https://spapi.dev/api/characters/"
 
 export async function getCharactersApi(){
     try {
-        const request = await fetch(`${URL}?page=30`);
+        const request = await fetch(`${URL}`);
         const response = await request.json();
-        return response.results;
+        return response.data;
     } catch (err) {
         throw Error(err);
     }
@@ -14,18 +14,8 @@ export async function getCharacterByIdApi(id){
     try {
         const request = await fetch(`${URL}${id}`);
         const response = await request.json();
-        return response;
+        return response.data;
     } catch (err) {
-        throw Error(err);
-    }
-}
-
-export async function getEpisodeName(url){
-    try{
-        const request = await fetch(url);
-        const response = await request.json();
-        return response.name;
-    }catch (err){
         throw Error(err);
     }
 }
